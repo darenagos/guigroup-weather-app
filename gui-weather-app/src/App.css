@@ -1,170 +1,384 @@
 @import url(reset.css);
 
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rajdhani:wght@300;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Rajdhani:wght@300;500;700&display=swap');
+
+@media only screen and (max-width: 1919px) {
+/* base of the interface */
+
 .base {
-  width: 430px;
-  height: 932px;
   background-color:#E4E3E4;
-  position: relative;
-}
-
-.main-photo {
-  width: 390px;
-  height: 356px;
-  flex-shrink: 0;
-  background-color: black;
-  border-radius: 50px 50px 0px 0px;
-  position: absolute;
-  top: 22px;
-  left: 20px;
-  background: url(../src/assets/main_image.png), lightgray 50% / cover no-repeat;
-}
-
-.search-bar {
-  width: 331px;
-  height: 45px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  background: #FFF;
   display: flex;
+  flex-direction:column;
   align-items: center;
-  position: absolute;
-  top: 43px;
-  left: 30px;
-
+  
 }
 
-.search-logo {
-  width: 27px;
-  height: 27px;
+/* main photo */
+
+.flex-sunrise {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.flex-sunset {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.flex-precipitation {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.flex-wind {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.main-photo {
+  margin-top: 1.38rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  /* width: 24.375rem;
+  height: 22.25rem; */
+  width: auto;
+  height: auto;
   flex-shrink: 0;
-  background: url(../src/assets/search_logo.png);
-  /* position: absolute;
-  top: 9px;
-  left: 10px; */
-  margin-left: 10px;
+  border-radius: 3.125rem 3.125rem 0rem 0rem;
+  background: url(../src/assets/main_image.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.search-text {
-  width: 71px;
-  height: 24px;
+.temperature {
+  /* width: 6.6875rem;
+  height: 5.375rem; */
   flex-shrink: 0;
-  color: rgba(0, 0, 0, 0.54);
-  font-family: Inter;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
-  margin-left: 5px;
-  /* position: absolute;
-  top: 9px;
-  left: 45px; */
-}
-
-.line-img {
-  width: 29px;
-  height: 29px;
-  flex-shrink: 0;
-  background: url(../src/assets/3_lines.png), lightgray 50% / cover no-repeat;
-  margin-left: 175px;
-}
-
-.weather-table {
-  width: 387px;
-  height: 129px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  background: rgba(189, 167, 153, 0.24);
-  position: absolute;
-  left: 23px;
-  top: 397px;
-}
-
-.tip {
-  width: 193px;
-  height: 189px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: url(../src/assets/tip-image.png);
-  position: absolute;
-  left: 23px;
-  top: 548px;
-}
-
-.caution {
-  width: 168px;
-  height: 109px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  background: #F6F6F6;
-  position: absolute;
-  left: 242px;
-  top: 548px;
-}
-
-.caution-logo1 {
-  margin-top: 0;
-  padding-top: 0;
-  width: 25px;
-  height: 25.708px;
-  flex-shrink: 0;
-  background: url(../src/assets/caution-symbol.png);
-}
-
-.caution-heading-text {
-  width: 98px;
-  height: 26.736px;
-  flex-shrink: 0;
-  color: #000;
-  text-align: center;
+  color: #FFF;
   font-family: "EB Garamond";
-  font-size: 20px;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  }
+}
 
-.caution-logo2 {
-  width: 25px;
-  height: 25.708px;
+.condition-icon {
+  width: 3.0625rem;
+  height: 3.12906rem;
+  flex-shrink: 0;
+  background-color: #FFF;
+}
+/* .sunrise-logo {
+  background-image: url(../src/assets/sunrise.png);
+  color: rgba(0, 0, 0, 0);
+}
+.sunset-logo {
+  background-image: url(../src/assets/sunset.png);
+  color: rgba(0, 0, 0, 0);
+} */
+.sunrise-time {
+  width: 2.625rem;
+  height: 0.5625rem;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sunset-time {
+  width: 2.8125rem;
+  height: 0.5625rem;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.location {
+  width: 7.5625rem;
+  height: 6.25rem;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "EB Garamond";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.high-low {
+  width: 4.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.precipitation {
+  width: 1.5rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wind-speed {
+  width: 2.9375rem;
+  height: 0.9375rem;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/* search bar */
+
+.search-bar {
+  margin-bottom: 1.5rem;
+  width: 20.6875rem;
+  height: 2.8125rem;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.flex-search {
+  display: flex;
+  align-items: center;
+}
+.search-logo {
+  width: 1.6875rem;
+  height: 1.6875rem;
+  flex-shrink: 0;
+  background: url(../src/assets/search_logo.png);
+  /* margin-left: 0.6rem; */
+}
+
+.search-text {
+  width: 4.4375rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-family: Inter;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  /* margin-left: 1.188rem; */
+}
+
+.settings-img {
+  align-items: center;
+  width: 3.0625rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  /* margin-left:8.5rem; */
+}
+
+
+/* weather table */
+
+.weather-table {
+  margin-top: 1.44rem;
+  width: 24.1875rem;
+  height: 8.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: rgba(189, 167, 153, 0.24);
+  padding: 1%;
+}
+
+
+ /* Todays Weather grid */
+
+ .grid-col-span-2{
+  grid-column: span 2;
+ }
+
+ .grid-col-span-4{
+  grid-column: span 4;
+ }
+
+.grid-container-todaysWeather{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* text-align: center; */
+  padding: 2rem;
+ 
+
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+
+  
+  
+  
+}
+
+
+ /* Weather Table grid CSS */
+
+.grid-container-multiDayOutlook{
+  display: grid;
+  
+  text-align: center;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: small;
+  
+}
+
+.grid-border-bottom{
+  border-bottom: 1px solid white;
+  
+}
+
+.grid-border-side{
+  border-right: 1px solid white;
+}
+
+
+/* tips and caution grid and css*/
+
+.grid-container-imgTipsCaution {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 1.44rem;
+  grid-gap:1rem;
+
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  
+}
+
+.grid-row-span-2{
+  grid-row: span 2;
+}
+
+.tip-image {
+  width: 12.0625rem;
+  height: 11.8125rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, rgba(83, 0, 0, 0.00) 0%, rgba(191, 171, 158, 0.92) 100%);
+  background: url(../src/assets/tip-image.png);
+}
+
+.caution {
+  width: 10.5rem;
+  height: 6.8125rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #F6F6F6;
+}
+
+.caution-logo1 {
+  
+  width: 1.5625rem;
+  height: 1.60675rem;
   flex-shrink: 0;
   background: url(../src/assets/caution-symbol.png);
+  position: relative;
+  left: 0.88rem;
+  right: 8.06rem;
+  
 }
+
+.caution-logo2 {
+
+  width: 1.5625rem;
+  height: 1.60675rem;
+  flex-shrink: 0;
+  background: url(../src/assets/caution-symbol.png);
+  position: relative;
+  right:0.75rem;
+  
+}
+
+.caution-heading-text {
+  width: 6.125rem;
+  height: 1.671rem;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  left: 1.25rem;
+  right: 1.625rem;
+  font-family: "EB Garamond";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+
+  }
+
+
 
 .heading-caution {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .tip-button {
-  width: 118px;
-  height: 47.596px;
+  width: 7.375rem;
+  height: 2.97475rem;
   flex-shrink: 0;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #D8CCCC;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #000;
   text-align: center;
   font-family: "EB Garamond";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  position: absolute;
-  left: 269px;
-  top: 689px;
 }
 
+
+/* google map */
+
 .map-position {
-  width: 396px;
-  height: 130px;
+  margin-top: 2.19rem;
+  width: 24.75rem;
+  height: 8.125rem;
+  margin-left:2%;
+  margin-right:2%;
   background-color: #D8CCCC;
   flex-shrink: 0;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  position: absolute;
-  left: 17px;
-  top: 772px;
+}
+
 }
