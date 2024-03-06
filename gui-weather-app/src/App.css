@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+@import url(reset.css);
+
+.base {
+  width: 430px;
+  height: 932px;
+  background-color:#E4E3E4;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-photo {
+  width: 390px;
+  height: 356px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 50px 50px 0px 0px;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  background: url(../src/assets/main_image.png), lightgray 50% / cover no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-bar {
+  width: 331px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #FFF;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top: 43px;
+  left: 30px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.search-logo {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  background: url(../src/assets/search_logo.png);
+  /* position: absolute;
+  top: 9px;
+  left: 10px; */
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search-text {
+  width: 71px;
+  height: 24px;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-left: 5px;
+  /* position: absolute;
+  top: 9px;
+  left: 45px; */
+}
+
+.line-img {
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  background: url(../src/assets/3_lines.png), lightgray 50% / cover no-repeat;
+  margin-left: 175px;
+}
+
+.weather-table {
+  width: 387px;
+  height: 129px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(189, 167, 153, 0.24);
+  position: absolute;
+  left: 23px;
+  top: 397px;
+}
+
+.tip {
+  width: 193px;
+  height: 189px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: url(../src/assets/tip-image.png);
+  position: absolute;
+  left: 23px;
+  top: 548px;
+}
+
+.caution {
+  width: 168px;
+  height: 109px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #F6F6F6;
+  position: absolute;
+  left: 242px;
+  top: 548px;
+}
+
+.caution-logo1 {
+  margin-top: 0;
+  padding-top: 0;
+  width: 25px;
+  height: 25.708px;
+  flex-shrink: 0;
+  background: url(../src/assets/caution-symbol.png);
+}
+
+.caution-heading-text {
+  width: 98px;
+  height: 26.736px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: "EB Garamond";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.caution-logo2 {
+  width: 25px;
+  height: 25.708px;
+  flex-shrink: 0;
+  background: url(../src/assets/caution-symbol.png);
+}
+
+.heading-caution {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.tip-button {
+  width: 118px;
+  height: 47.596px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #D8CCCC;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  text-align: center;
+  font-family: "EB Garamond";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 269px;
+  top: 689px;
+}
+
+.map-position {
+  width: 396px;
+  height: 130px;
+  background-color: #D8CCCC;
+  flex-shrink: 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 17px;
+  top: 772px;
 }
