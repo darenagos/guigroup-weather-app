@@ -123,7 +123,7 @@ function App() {
       </div>
 
       <div className="map-position">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.986603227164!2d-5.107360482956925!3d56.82032559835092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48893323371c031b%3A0xcda03ee308544821!2sFort%20William!5e0!3m2!1sen!2suk!4v1710149794265!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.986603227164!2d-5.107360482956925!3d56.82032559835092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48893323371c031b%3A0xcda03ee308544821!2sFort%20William!5e0!3m2!1sen!2suk!4v1710149794265!5m2!1sen!2suk"></iframe>
       </div>
     </div>
   );
