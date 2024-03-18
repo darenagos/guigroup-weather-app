@@ -43,17 +43,19 @@ function page_select(page) {
   }
 }
 
+
 function App() {
   return (
     <div className="base">
       <div className="main-photo">
         <div className="grid-container-todaysWeather">
           {/* search bar section */}
-          <form className="search-bar grid-col-span-4" onSubmit>
+          <form className="search-bar grid-col-span-4">
             <div className="flex-search">
               <div className="search-logo"></div>
               <input Placeholder="Location" className="search-text"></input>
             </div>
+            
           </form>
 
           {/* sunrise - sunset section */}
@@ -144,11 +146,6 @@ function App() {
             <p className="caution-heading-text">Caution</p>
             <div className="caution-logo2"></div>
           </div>
-        </div>
-        <div>
-          <button type="button" className="tip-button">
-            Tips
-          </button>
         </div>
       </div>
 
