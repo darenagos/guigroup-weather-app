@@ -10,14 +10,15 @@ import wind from "./assets/wind.png";
 import drop from "./assets/drop.png";
 import settings from "./assets/settings.png";
 
+import Tips from "./Components/tips";
 
-function page_select(page){
+function page_select(page) {
   let allimages = document.getElementsByClassName("map_iamges");
-  for(i = 0; i < allimages.length; i++){
+  for (let i = 0; i < allimages.length; i++) {
     allimages[i].classList.add("hidden");
   }
   let image;
-  switch(page){
+  switch (page) {
     case 1:
       image = document.getElementById("map_image_1");
       image.getElementById("myElement").classList.remove("hidden");
@@ -41,6 +42,12 @@ function page_select(page){
   }
 }
 
+function handleClick() {
+  let locationOne = "Ben Nevis";
+  let locationTwo = "Ben Nevis";
+  let locationThree = "Ben Nevis";
+  ss;
+}
 
 function App() {
   return (
@@ -148,7 +155,7 @@ function App() {
           </div>
         </div>
         <div>
-          <button type="button" className="tip-button">
+          <button type="button" className="tip-button" onClick={handleClick}>
             Tips
           </button>
         </div>
@@ -157,18 +164,22 @@ function App() {
       <div className="map-position">
         {/* Location1 : iverness */}
         {/*<iframe class="map_images" id="map_image_1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68659.47646242415!2d-4.304257591030771!3d57.46796943591905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488f715b2d17de2b%3A0x624309d12e3ec43d!2sInverness!5e0!3m2!1sen!2suk!4v1710625043631!5m2!1sen!2suk"></iframe>*/}
-        
+
         {/*location2 : Cumbria*/}
         {/* <iframe class="map_images" id="map_image_2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1183140.5187562276!2d-4.218729275325614!3d54.607140195903426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48632ab0a13de7c5%3A0x16e1925b0544819a!2sCumbria!5e0!3m2!1sen!2suk!4v1710625192264!5m2!1sen!2suk"></iframe> */}
-        
+
         {/*location3 : Llanberis*/}
         {/* <iframe class="map_images" id="map_image_3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19157.08853064196!2d-4.159984916298551!3d53.11672663838094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4865083adcf9019d%3A0x661d4ddca71a0d79!2sLlanberis%2C%20Caernarfon!5e0!3m2!1sen!2suk!4v1710625273838!5m2!1sen!2suk"></iframe> */}
-        
+
         {/*location4 : Cairngorms*/}
         {/* <iframe class="map_images" id="map_image_4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124210.55431278632!2d-3.799977999973211!3d57.07857906349725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4885f07ad2999fc5%3A0x2f20def8538fba31!2sCairngorms!5e0!3m2!1sen!2suk!4v1710625348523!5m2!1sen!2suk"></iframe> */}
-        
+
         {/* Loaciton5 : Fort william */}
-        <iframe class="map_images" id="map_image_5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.986603227164!2d-5.107360482956925!3d56.82032559835092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48893323371c031b%3A0xcda03ee308544821!2sFort%20William!5e0!3m2!1sen!2suk!4v1710149794265!5m2!1sen!2suk"></iframe>
+        <iframe
+          class="map_images"
+          id="map_image_5"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.986603227164!2d-5.107360482956925!3d56.82032559835092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48893323371c031b%3A0xcda03ee308544821!2sFort%20William!5e0!3m2!1sen!2suk!4v1710149794265!5m2!1sen!2suk"
+        ></iframe>
       </div>
     </div>
   );

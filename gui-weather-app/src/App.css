@@ -365,6 +365,9 @@
   font-weight: 400;
   line-height: normal;
 }
+.tip-button:hover{
+  background-color: #D8CCCC;
+}
 
 
 /* google map */
