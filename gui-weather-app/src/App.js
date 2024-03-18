@@ -55,6 +55,7 @@ function App() {
               <input Placeholder="Location" className="search-text"></input>
             </div>
           </form>
+          <Weather />
 
           {/* sunrise - sunset section */}
           <div>
