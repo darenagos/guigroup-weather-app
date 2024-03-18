@@ -43,13 +43,6 @@ function page_select(page) {
   }
 }
 
-function handleClick() {
-  let locationOne = "Ben Nevis";
-  let locationTwo = "Ben Nevis";
-  let locationThree = "Ben Nevis";
-  ss;
-}
-
 function App() {
   return (
     <div className="base">
@@ -156,7 +149,7 @@ function App() {
           </div>
         </div>
         <div>
-          <button type="button" className="tip-button" onClick={handleClick}>
+          <button type="button" className="tip-button">
             Tips
           </button>
         </div>
