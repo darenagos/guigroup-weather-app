@@ -54,9 +54,7 @@ function App() {
               <div className="search-logo"></div>
               <p className="search-text">search</p>
             </div>
-            <div className="settings-img">
-              <img src={settings} width="38px" />
-            </div>
+            {/* fuck yououuuuu */}
           </div>
 
           {/* sunrise - sunset section */}
