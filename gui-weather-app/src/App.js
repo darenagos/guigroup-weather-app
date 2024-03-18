@@ -14,29 +14,29 @@ import settings from "./assets/settings.png";
 function page_select(page){
   let allimages = document.getElementsByClassName("map_iamges");
   for(i = 0; i < allimages.length; i++){
-    allimages[i].classList.add("hidden");
+    allimages[i].style.display = "none";
   }
   let image;
   switch(page){
     case 1:
       image = document.getElementById("map_image_1");
-      image.getElementById("myElement").classList.remove("hidden");
+      image.getElementById("myElement").style.display = "block";
       break;
     case 2:
       image = document.getElementById("map_image_2");
-      image.getElementById("myElement").classList.remove("hidden");
+      image.getElementById("myElement").style.display = "block";
       break;
     case 3:
       image = document.getElementById("map_image_3");
-      image.getElementById("myElement").classList.remove("hidden");
+      image.getElementById("myElement").style.display = "block";
       break;
     case 4:
       image = document.getElementById("map_image_4");
-      image.getElementById("myElement").classList.remove("hidden");
+      image.getElementById("myElement").style.display = "block";
       break;
     case 5:
       image = document.getElementById("map_image_5");
-      image.getElementById("myElement").classList.remove("hidden");
+      image.getElementById("myElement").style.display = "block";
       break;
   }
 }
