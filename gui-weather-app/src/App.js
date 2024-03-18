@@ -49,13 +49,12 @@ function App() {
       <div className="main-photo">
         <div className="grid-container-todaysWeather">
           {/* search bar section */}
-          <div className="search-bar grid-col-span-4">
+          <form className="search-bar grid-col-span-4" onSubmit>
             <div className="flex-search">
               <div className="search-logo"></div>
-              <p className="search-text">search</p>
+              <input Placeholder="Location" className="search-text"></input>
             </div>
-            {/* fuck yououuuuu */}
-          </div>
+          </form>
 
           {/* sunrise - sunset section */}
           <div>
