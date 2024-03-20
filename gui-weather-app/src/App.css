@@ -301,11 +301,22 @@
 }
 
 .caution {
-  width: 10.5rem;
-  height: 6.8125rem;
+  /* width: 10.5rem;
+  height: 6.8125rem; */
   flex-shrink: 0;
   border-radius: 0.3125rem;
   background: #F6F6F6;
+}
+
+.caution-text {
+  color: #000;
+  font-family: "EB Garamond";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0.88rem;
+  padding-bottom: 0.88rem;
 }
 
 .caution-logo1 {

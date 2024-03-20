@@ -11,6 +11,8 @@ import wind from "./assets/wind.png";
 import drop from "./assets/drop.png";
 import settings from "./assets/settings.png";
 
+import Caution from "./Components/Caution/Caution";
+
 // import Tips from "./Components/tips";
 
 function page_select(page) {
@@ -44,14 +46,11 @@ function page_select(page) {
   }
 }
 
-
 function App() {
   return (
     <div className="base">
       {/* search bar section */}
       <Weather />
-
-             
 
       {/* WEATHER TABLE >>> */}
 
@@ -93,7 +92,8 @@ function App() {
       </div>
 
       {/* image caution and tips  */}
-      <div className="grid-container-imgTipsCaution">
+      <Caution />
+      {/* <div className="grid-container-imgTipsCaution">
         <div className="tip-image grid-row-span-2"></div>
         <div className="caution">
           <div className="heading-caution">
@@ -107,7 +107,7 @@ function App() {
             Tips
           </button>
         </div>
-      </div>
+      </div> */}
 
       <div className="map-position">
         {/* Location1 : iverness */}
