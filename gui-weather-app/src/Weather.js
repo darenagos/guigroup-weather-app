@@ -1,9 +1,29 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
+// all ICONS
 import sunrise from "./assets/sunrise.png";
 import sunset from "./assets/sunset.png";
 import wind from "./assets/wind.png";
 import drop from "./assets/drop.png";
+import clear_night from "./assets/conditions/01n.png"
+import clear_day from "./assets/conditions/01d.png"
+import few_clouds_day from "./assets/conditions/02d.png"
+import few_clouds_night from "./assets/conditions/02n.png"
+import scattered_clouds_day from "./assets/conditions/03d.png"
+import scattered_clouds_night from "./assets/conditions/03n.png"
+import broken_clouds_day from "./assets/conditions/04d.png"
+import broken_clouds_night from "./assets/conditions/04n.png"
+import shower_rain_day from "./assets/conditions/09d.png"
+import shower_rain_night from "./assets/conditions/09n.png"
+import rain_day from "./assets/conditions/10d.png"
+import rain_night from "./assets/conditions/10n.png"
+import thunderstorm_day from "./assets/conditions/11d.png"
+import thunderstorm_night from "./assets/conditions/11n.png"
+import snow_day from "./assets/conditions/13d.png"
+import snow_night from "./assets/conditions/13n.png"
+import mist_day from "./assets/conditions/50d.png"
+import mist_night from "./assets/conditions/50n.png"
 
 import Caution from "./Components/CautionTipsSection/CautionTipsSection";
  
@@ -39,6 +59,47 @@ const Weather = () => {
     // Replace spaces with plus sign
     return cityName.replace(/\s+/g, "+");
   };
+
+  const getConditionIcon = (id) => {
+    switch(id) {
+      case "01d":
+        return clear_day;
+      case "01n":
+        return clear_night;
+      case "02d":
+        return few_clouds_day;
+      case "02n":
+        return few_clouds_night;
+      case "03d":
+        return scattered_clouds_day;
+      case "03n":
+        return scattered_clouds_night;
+      case "04d":
+        return broken_clouds_day;
+      case "04n":
+        return broken_clouds_night;
+      case "09d":
+        return shower_rain_day;
+      case "09n":
+        return shower_rain_night;
+      case "10d":
+        return rain_day;
+      case "10n":
+        return rain_night;
+      case "11d":
+        return thunderstorm_day;
+      case "11n":
+        return thunderstorm_night;
+      case "13d":
+        return snow_day
+      case "13n":
+        return snow_night;
+      case "13d":
+        return mist_day;
+      case "13n":
+        return mist_night;
+    }
+  }
 
   return (
   <>
@@ -78,7 +139,7 @@ const Weather = () => {
               </div>
             </div>
             <div className="condition-icon">
-              {weatherData.weather.icon}
+              <img src={getConditionIcon(weatherData.weather[0].icon)} />
             </div>
             <div className="temperature">{weatherData.main.temp.toFixed(0)}°</div>
             <div>

@@ -68,13 +68,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.condition-icon {
-  width: 3.0625rem;
-  height: 3.12906rem;
-  flex-shrink: 0;
-  background-color: #FFF;
-}
 /* .sunrise-logo {
   background-image: url(../src/assets/sunrise.png);
   color: rgba(0, 0, 0, 0);
