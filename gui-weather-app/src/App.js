@@ -1,17 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "./AppMediaQueries.css";
-import React, { useState } from "react";
+import React from "react";
 import Weather from "./Weather";
+import "./Weather";
 
-import WeatherDisplay from "./Components/weatherDisplay/weatherDisplay";
-import SearchBar from "./Components/searchBar/searchBar";
+import sunrise from "./assets/sunrise.png";
+import sunset from "./assets/sunset.png";
+import wind from "./assets/wind.png";
+import drop from "./assets/drop.png";
+import settings from "./assets/settings.png";
 
-// import sunrise from "./assets/sunrise.png";
-// import sunset from "./assets/sunset.png";
-// import wind from "./assets/wind.png";
-// import drop from "./assets/drop.png";
-// import settings from "./assets/settings.png";
+import Tips from "./Components/tips";
 
 function page_select(page) {
   let allimages = document.getElementsByClassName("map_iamges");
@@ -44,121 +44,56 @@ function page_select(page) {
   }
 }
 
+
 function App() {
-  const [city, setCity] = useState(""); // State to store the city
-
-  // Handler function to update the city state
-  const handleCitySearch = (city) => {
-    setCity(city);
-  };
-
   return (
     <div className="base">
-      <div>
-        {/* Pass the handleCitySearch function as a prop to SearchBar */}
-        <SearchBar onSubmit={handleCitySearch} />
-        {/* Pass the city state to PicureDisplayInformation */}
-        <WeatherDisplay city={city} />
-      </div>
-      {/* <div className="main-photo">
-        <div className="grid-container-todaysWeather"> */}
+      {/* search bar section */}
+      <Weather />
 
-      {/* <form
-            className="search-bar grid-col-span-4"
-            onSubmit={Weather.handleSubmit}
-          >
-            <div className="flex-search">
-              <div className="search-logo"></div>
-              <input
-                placeholder="Location"
-                value={Weather.city}
-                onChange={Weather.handleInputChange}
-                className="search-text"
-              ></input>
-            </div>
-          </form> */}
-
-      {/* sunrise - sunset section */}
-      {/* <div>
-            <div className="flex-sunrise">
-              <div className="sunrise-logo">
-                <img src={sunrise} />
-              </div>
-              <div className="sunrise-time">??:??</div>
-            </div>
-            <div className="flex-sunset">
-              <div className="sunset-logo">
-                <img src={sunset} />
-              </div>
-              <div className="sunset-time">??:??</div>
-            </div>
-          </div> */}
-      {/* today temp section*/}
-      {/* <div className="condition-icon"></div> */}
-      {/* <div className="temperature">??°</div> */}
-      {/* high low wind section */}
-      {/* <div>
-            <div className="high-low">H:??°L:??°</div>
-            <div className="flex-precipitation">
-              <div className="precipitation-icon">
-                <img src={drop} />
-              </div>
-              <div className="precipitation">?%</div>
-            </div>
-            <div className="flex-wind">
-              <div className="windspeed-icon">
-                <img src={wind} />
-              </div>
-              <div className="wind-speed">? mph</div>
-            </div>
-          </div>
-          <div></div>
-          <div className="location grid-col-span-2">Location</div>
-          <div></div>
-        </div>
-      </div> */}
+             
 
       {/* WEATHER TABLE >>> */}
 
-      {/* <div className="weather-table grid-container-multiDayOutlook"> */}
-      {/* days */}
-      {/* <div className="grid-border-bottom grid-border-side">Today</div>
+      <div className="weather-table grid-container-multiDayOutlook">
+        {/* days */}
+        <div className="grid-border-bottom grid-border-side">Today</div>
         <div className="grid-border-bottom grid-border-side">Tue</div>
         <div className="grid-border-bottom grid-border-side">Wed</div>
         <div className="grid-border-bottom grid-border-side">Thu</div>
         <div className="grid-border-bottom grid-border-side">Fri</div>
         <div className="grid-border-bottom grid-border-side">Sat</div>
-        <div className="grid-border-bottom">Sun</div> */}
-      {/* weathericons */}
-      {/* <div className="grid-border-side">icon</div> */}
-      {/* <div className="grid-border-side">icon</div>
+        <div className="grid-border-bottom">Sun</div>
+        {/* weathericons */}
+        <div className="grid-border-side">icon</div> {/* << placeholder */}
         <div className="grid-border-side">icon</div>
         <div className="grid-border-side">icon</div>
         <div className="grid-border-side">icon</div>
         <div className="grid-border-side">icon</div>
-        <div>icon</div> */}
-      {/* chance of rain */}
-      {/* <div className="grid-border-side">%COR</div>{" "} */}
-      {/* chance of rain placeholder*/}
-      {/* <div className="grid-border-side">%COR</div>
+        <div className="grid-border-side">icon</div>
+        <div>icon</div>
+        {/* chance of rain */}
+        <div className="grid-border-side">%COR</div>{" "}
+        {/* chance of rain placeholder*/}
         <div className="grid-border-side">%COR</div>
         <div className="grid-border-side">%COR</div>
         <div className="grid-border-side">%COR</div>
         <div className="grid-border-side">%COR</div>
-        <div>%COR</div> */}
-      {/* high low temperature */}
-      {/* <div className="grid-border-side">HLtemp</div>{" "} */}
-      {/* High Low temp placeholder*/}
-      {/* <div className="grid-border-side">HLtemp</div>
+        <div className="grid-border-side">%COR</div>
+        <div>%COR</div>
+        {/* high low temperature */}
+        <div className="grid-border-side">HLtemp</div>{" "}
+        {/* High Low temp placeholder*/}
+        <div className="grid-border-side">HLtemp</div>
         <div className="grid-border-side">HLtemp</div>
         <div className="grid-border-side">HLtemp</div>
         <div className="grid-border-side">HLtemp</div>
         <div className="grid-border-side">HLtemp</div>
         <div>HLtemp</div>
-      </div> */}
+      </div>
 
       {/* image caution and tips  */}
-      {/* <div className="grid-container-imgTipsCaution">
+      <div className="grid-container-imgTipsCaution">
         <div className="tip-image grid-row-span-2"></div>
         <div className="caution">
           <div className="heading-caution">
@@ -172,7 +107,7 @@ function App() {
             Tips
           </button>
         </div>
-      </div> */}
+      </div>
 
       <div className="map-position">
         {/* Location1 : iverness */}

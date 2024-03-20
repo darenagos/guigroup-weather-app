@@ -19,6 +19,8 @@
 
 /* main photo */
 
+
+
 .flex-sunrise {
   display: flex;
   flex-direction: row;
@@ -234,6 +236,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* text-align: center; */
+  height: 15rem;
   padding: 2rem;
  
 
