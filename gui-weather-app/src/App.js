@@ -11,7 +11,7 @@ import wind from "./assets/wind.png";
 import drop from "./assets/drop.png";
 import settings from "./assets/settings.png";
 
-import Tips from "./Components/tips";
+// import Tips from "./Components/tips";
 
 function page_select(page) {
   let allimages = document.getElementsByClassName("map_iamges");
