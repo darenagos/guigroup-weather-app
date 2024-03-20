@@ -275,6 +275,7 @@
 /* tips and caution grid and css*/
 
 .grid-container-imgTipsCaution {
+  margin-left: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 1.44rem;
@@ -382,11 +383,56 @@
   font-weight: 400;
   line-height: normal;
 }
-.tip-button:hover{
-  background-color: #D8CCCC;
+button:hover{
+  color: #F6F6F6;
+  background: #9b9191;
 }
 
+.translucent-bg{
+  position: fixed;
+  background: rgba(39, 39, 39, 0.50);
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup-inner {
+  position: fixed;
+  z-index: 9999;
+  top: 15.1rem;
+  left: 2.88rem;
+  width: 21.125rem;
+  height: 29.875rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #F2EBEB;
+}
 
+.popup-heading {
+  padding: 1rem;
+  display: flex;
+  justify-content:space-between;
+  color: #000;
+  text-align: center;
+  font-family: "EB Garamond";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tips-heading {
+  margin-left: 7.6rem;
+}
+
+.close-btn {
+  font-size: large;
+}
+
+hr {
+  margin: 0 1rem 0 1rem;
+}
 /* google map */
 
 .map-position {

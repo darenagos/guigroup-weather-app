@@ -4,6 +4,8 @@ import sunrise from "./assets/sunrise.png";
 import sunset from "./assets/sunset.png";
 import wind from "./assets/wind.png";
 import drop from "./assets/drop.png";
+
+import Caution from "./Components/CautionTipsSection/CautionTipsSection";
  
 
 const Weather = () => {
@@ -32,7 +34,14 @@ const Weather = () => {
     e.preventDefault();
     fetchData();
   };
+
+  const formatCityName = (cityName) => {
+    // Replace spaces with plus sign
+    return cityName.replace(/\s+/g, "+");
+  };
+
   return (
+  <>
     <div className="main-photo">
       <div className="grid-container-todaysWeather">
       {/* search bar section */}
@@ -93,7 +102,8 @@ const Weather = () => {
       )} 
       </div>
     </div>
-      
+    <Caution />
+  </>
   );
 };
 export default Weather;

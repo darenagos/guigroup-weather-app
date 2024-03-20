@@ -11,7 +11,8 @@ import wind from "./assets/wind.png";
 import drop from "./assets/drop.png";
 import settings from "./assets/settings.png";
 
-import Caution from "./Components/Caution/Caution";
+import Caution from "./Components/CautionTipsSection/CautionTipsSection";
+import Popup from "./Components/Popup-open";
 
 // import Tips from "./Components/tips";
 
@@ -92,7 +93,8 @@ function App() {
       </div>
 
       {/* image caution and tips  */}
-      <Caution />
+      
+      {/* <Caution /> */}
       {/* <div className="grid-container-imgTipsCaution">
         <div className="tip-image grid-row-span-2"></div>
         <div className="caution">
