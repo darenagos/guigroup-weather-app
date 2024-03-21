@@ -3,9 +3,10 @@
 
 1. Make sure you have cloned the repository and opened it in Visual Studio Code.
 2. When running npm, the terminal should be opened in the src folder. Do this by right clicking on the src folder and clicking 'Open in Integrated Terminal'.
-3. Make sure npm is installed. if not, do 'npm install'
-4. Make sure npm axios is installed. If not, do 'npm install axios'.
-5. After installation of axios, do 'npm start' to run App.js, which will open a local host server containing the interface.
+3. Ensure Node.js is installed using 'node -v'. If not, download it from here: https://nodejs.org//
+4. Ensure npm is installed. if not, do 'npm install'.
+5. Make sure npm axios is installed. If not, do 'npm install axios'.
+6. After installation of axios, do 'npm start' to run App.js, which will open a local host server containing the interface.
 
 # Getting Started with Create React App
 
