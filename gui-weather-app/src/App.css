@@ -156,6 +156,9 @@
   font-weight: 400;
   line-height: normal;
 }
+.temp-unit {
+  font-size: large;
+}
 
 /* search bar. This is for the search bar used to search for cities*/
 .search-bar {

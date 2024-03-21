@@ -148,7 +148,8 @@ const Weather = () => {
 
               {/* Location */}
               <div id="CurrentLocation" className="location grid-col-span-2">
-                {weatherData.name}
+                <div className="temp-unit">Celcius</div>
+                <div>{weatherData.name}</div>
               </div>
               <div></div>
             </div>
