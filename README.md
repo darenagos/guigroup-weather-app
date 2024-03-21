@@ -1,1 +1,0 @@
-# guigroup-weather-app
