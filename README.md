@@ -1,7 +1,7 @@
 # guigroup-weather-app
 # GUI Group 16 - Assignment 2: Trailcast
 
-1. Make sure you have cloned the repository and opened it in Visual Studio Code or other similar applications.
+1. Make sure you have cloned the repository and opened it in Visual Studio Code.
 2. When running npm, the terminal should be opened in the src folder. Do this by right clicking on the src folder and clicking 'Open in Integrated Terminal'.
 3. Make sure npm is installed. if not, do 'npm install'
 4. Make sure npm axios is installed. If not, do 'npm install axios'.
