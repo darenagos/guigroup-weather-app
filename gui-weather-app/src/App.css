@@ -6,9 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Rajdhani:wght@300;500;700&display=swap');
 
-@media only screen and (max-width: 1919px) {
-/* base of the interface */
-
+/* BASE FOR THE INTERFACE */
 .base {
   background-color:#E4E3E4;
   display: flex;
@@ -20,25 +18,14 @@
   overflow: auto;
   
 }
+
+/* homescreen */
 .welcome {
   font-family: "EB Garamond";
   text-shadow: 2px 2px 2px rgb(226, 220, 220);
-
-  
 }
-/* main photo */
 
-
-/* .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    
-} */
-
-
-
+/* main photo. This includes all the statistics for the weather for example, tememrature, sunrise/sinset etc */
 .flex-sunrise {
   display: flex;
   flex-direction: row;
@@ -63,19 +50,14 @@
   margin-top: 1.38rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
-  /* width: 24.375rem;
-  height: 22.25rem; */
   width: auto;
   height: auto;
   flex-shrink: 0;
   border-radius: 3.125rem 3.125rem 0rem 0rem;
   background: url(../src/assets/main_image.png);
-
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
 .main-photo-homescreen{
   display: flex;
   flex-direction: column;
@@ -86,13 +68,10 @@
   background: url(../src/assets/main-photo-homescreen.avif);
   background-repeat: no-repeat;
   background-position: center;
-
-  
 }
 .search-bar-home:focus-within + .main-photo-homescreen {
   display: none;
 }
-
 .temperature {
   /* width: 6.6875rem;
   height: 5.375rem; */
@@ -104,14 +83,12 @@
   font-weight: 400;
   line-height: normal;
 }
-
 .condition-icon {
   width: 3.0625rem;
   height: 3.12906rem;
   flex-shrink: 0;
   background-color: #FFF;
 }
-
 .sunrise-time {
   width: 2.625rem;
   height: 0.5625rem;
@@ -123,7 +100,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
 .sunset-time {
   width: 2.8125rem;
   height: 0.5625rem;
@@ -135,7 +111,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
 .location {
   width: 7.5625rem;
   height: 6.25rem;
@@ -148,7 +123,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
 .high-low {
   width: 4.5rem;
   height: 1.5rem;
@@ -160,7 +134,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
 .precipitation {
   width: 1.5rem;
   height: 0.875rem;
@@ -172,7 +145,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
 .wind-speed {
   width: 2.9375rem;
   height: 0.9375rem;
@@ -185,9 +157,7 @@
   line-height: normal;
 }
 
-
-/* search bar */
-
+/* search bar. This is for the search bar used to search for cities*/
 .search-bar {
   margin-bottom: 1.5rem;
   width: 20.6875rem;
@@ -201,21 +171,6 @@
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
-
-.search-bar-home{
-  margin-bottom: 1.5rem;
-  width: 20.6875rem;
-  height: 2.8125rem;
-  flex-shrink: 0;
-  border-radius: 1.875rem;
-  background: #FFF;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-
-}
 .flex-search {
   display: flex;
   align-items: center;
@@ -225,9 +180,7 @@
   height: 1.6875rem;
   flex-shrink: 0;
   background: url(../src/assets/search_logo.png);
-  /* margin-left: 0.6rem; */
 }
-
 .search-text {
   width: 4.4375rem;
   height: 1.5rem;
@@ -241,20 +194,15 @@
   width:fit-content;
   border: none;
   outline: none;
-  /* margin-left: 1.188rem; */
 }
-
 .settings-img {
   align-items: center;
   width: 3.0625rem;
   height: 2.25rem;
   flex-shrink: 0;
-  /* margin-left:8.5rem; */
 }
 
-
-/* weather table */
-
+/* Multi-day table */
 .weather-table {
   margin-top: 1.44rem;
   width: 24.1875rem;
@@ -265,17 +213,13 @@
   padding: 1%;
 }
 
-
  /* Todays Weather grid */
-
  .grid-col-span-2{
   grid-column: span 2;
  }
-
  .grid-col-span-4{
   grid-column: span 4;
  }
-
 .grid-container-todaysWeather{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -287,7 +231,6 @@
   align-content: space-evenly;
   align-items: center;
 }
-
 .unit-switch-btn {
   font-size: small;
   flex-shrink: 0;
@@ -303,16 +246,12 @@
   padding: 0 0.5rem 0 0.5rem;
 }
 
-
  /* Weather Table grid CSS */
-
 .grid-container-multiDayOutlook{
   display: grid;
-  
   text-align: center;
   grid-template-columns: repeat(6, 1fr);
   font-size: small;
-  
 }
 .grid-border-bottom{
   border-bottom: 1px solid white;
@@ -321,26 +260,22 @@
   width:50px;
   height:50px;
 }
-/* tips and caution grid and css*/
 
+/* tips and caution grid and css*/
 .grid-container-imgTipsCaution {
   margin-left: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 1.44rem;
   grid-gap:1rem;
-
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
   align-items: center;
-  
 }
-
 .grid-row-span-2{
   grid-row: span 2;
 }
-
 .tip-image {
   width: 12.0625rem;
   height: 11.8125rem;
@@ -349,10 +284,7 @@
   background: linear-gradient(180deg, rgba(83, 0, 0, 0.00) 0%, rgba(191, 171, 158, 0.92) 100%);
   background: url(../src/assets/tip-image.png);
 }
-
 .caution {
-  /* width: 10.5rem;
-  height: 6.8125rem; */
   flex-shrink: 0;
   border-radius: 0.3125rem;
   background: #F6F6F6;
@@ -367,9 +299,7 @@
   padding-left: 0.88rem;
   padding-bottom: 0.88rem;
 }
-
 .caution-logo1 {
-  
   width: 1.5625rem;
   height: 1.60675rem;
   flex-shrink: 0;
@@ -377,20 +307,15 @@
   position: relative;
   left: 0.88rem;
   right: 8.06rem;
-  
 }
-
 .caution-logo2 {
-
   width: 1.5625rem;
   height: 1.60675rem;
   flex-shrink: 0;
   background: url(../src/assets/caution-symbol.png);
   position: relative;
   right:0.75rem;
-  
 }
-
 .caution-heading-text {
   width: 6.125rem;
   height: 1.671rem;
@@ -404,26 +329,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  
-
   }
 .tips-writing {
-    color: #000;
-    font-family: "EB Garamond";
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 0 1.44rem 0  1.44rem;
-  }
-
-
+  color: #000;
+  font-family: "EB Garamond";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 1.44rem 0  1.44rem;
+}
 .heading-caution {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
-
 .tip-button {
   width: 7.375rem;
   height: 2.97475rem;
@@ -463,7 +383,6 @@ button:hover{
   border-radius: 0.3125rem;
   background: #F2EBEB;
 }
-
 .popup-heading {
   padding: 1rem;
   display: flex;
@@ -476,14 +395,10 @@ button:hover{
   font-weight: 400;
   line-height: normal;
 }
-
-
 .tips-heading {
   margin-left: 50%; /* Adjust this as needed */
   transform: translateX(-50%);
 }
-
-
 .close-btn {
   font-size: large;
 }
@@ -491,9 +406,7 @@ hr {
   margin: 0 1rem 0 1rem;
 }
 
-
-/* google map */
-
+/* MAP API */
 .map-position {
   margin-top: 2.19rem;
   width: 24.75rem;
@@ -510,10 +423,8 @@ hr {
   width: 100%;
   height: 100%;
 }
-
 .hidden
 {
   display: none;
 }
 
-}
