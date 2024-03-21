@@ -1,5 +1,11 @@
 # GUI Group 16 - Assignment 2: Trailcast
 
+Make sure you have cloned the repository.
+When running npm, the terminal should be opened in the src folder. 
+Make sure npm is installed. if not, do 'npm install'
+Make sure npm axios is installed. If not, do 'npm install axios'.
+After installation of axios, do 'npm start' to run App.js, which will open a local host server containing the interface.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
