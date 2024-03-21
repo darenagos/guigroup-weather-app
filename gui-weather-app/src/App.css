@@ -237,10 +237,20 @@
   justify-items: center;
   align-content: space-evenly;
   align-items: center;
-
-  
-  
-  
+}
+.unit-switch-btn {
+  font-size: small;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  background: #D8CCCC;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  text-align: center;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 
@@ -426,6 +436,16 @@ button:hover{
 hr {
   margin: 0 1rem 0 1rem;
 }
+.tips-writing {
+  color: #000;
+  font-family: "EB Garamond";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 1.44rem 0  1.44rem;
+}
+
 /* google map */
 
 .map-position {

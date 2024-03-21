@@ -55,11 +55,6 @@ const Weather = () => {
     fetchData();
   };
 
-  const formatCityName = (cityName) => {
-    // Replace spaces with plus sign
-    return cityName.replace(/\s+/g, "+");
-  };
-
   const getConditionIcon = (id) => {
     switch(id) {
       case "01d":
@@ -123,7 +118,6 @@ const Weather = () => {
             <p>Humidity : {weatherData.main.humidity}%</p>
             <p>Pressure : {weatherData.main.pressure}</p>
             <p>Wind Speed : {weatherData.wind.speed}m/s</p> */}
-            
             <div>
               <div className="flex-sunrise">
                 <div className="sunrise-logo">
@@ -154,7 +148,8 @@ const Weather = () => {
               </div>
             </div>
             <div></div>
-            <div className="location grid-col-span-2">{weatherData.name}</div>
+            <div className="location grid-col-span-2">{weatherData.name}
+            <button className="unit-switch-btn">Switch to Fahrenheit</button></div>
             <div></div>
           </>
         ) : (
@@ -163,7 +158,7 @@ const Weather = () => {
       )} 
       </div>
     </div>
-    <Caution />
+    <Caution weatherData={weatherData}/>
   </>
   );
 };
