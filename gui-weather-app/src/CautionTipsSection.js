@@ -135,16 +135,13 @@ function Caution({ weatherData }, { city }) {
       return (
         <div className="tips-writing">
           <p>
-            1) Layer Up: Dress with insulating mid-layers, and a waterproof
-            outer shell to stay warm and dry.
+            1) Layer Up: Dress with insulating mid-layers, and a waterproof outer shell to stay warm and dry.
           </p>
           <p>
-            2) Insulate Extremities: Wear gloves, a hat, and thick socks to
-            protect your hands, head, and feet from frostbite.
+            2) Insulate Extremities: Wear gloves, a hat, and thick socks to protect your hands, head, and feet from frostbite.
           </p>
           <p>
-            3) Stay Hydrated: Even in cold weather, dehydration is a risk. Drink
-            plenty of water and warm beverages.
+            3) Stay Hydrated: Even in cold weather, dehydration is a risk. Drink plenty of water and warm beverages.
           </p>
           <p>4) Watch for Ice: Be cautious of icy patches on trails.</p>
         </div>
