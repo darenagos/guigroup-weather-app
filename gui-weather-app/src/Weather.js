@@ -148,8 +148,7 @@ const Weather = () => {
               </div>
             </div>
             <div></div>
-            <div className="location grid-col-span-2">{weatherData.name}
-            <button className="unit-switch-btn">Switch to Fahrenheit</button></div>
+            <div className="location grid-col-span-2">{weatherData.name}</div>
             <div></div>
           </>
         ) : (
