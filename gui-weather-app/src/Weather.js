@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import GetLocation from "./App.js";
 import sunrise from "./assets/sunrise.png";
 import sunset from "./assets/sunset.png";
 import wind from "./assets/wind.png";
-import drop from "./assets/drop.png";
+import Caution from "./CautionTipsSection.js"
 import MultiDayOutlook from "./MultiDayOutlook.js";
- 
+import Map from "./mapLocation"
 
 const Weather = () => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [submitted, setsubmit] = useState(null)
+  const [showWelcome, setShowWelcome] = useState(true);
+
   const fetchData = async () => {
     try {
       const response = await axios.get(
@@ -33,21 +34,44 @@ const Weather = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchData();
+    setShowWelcome(false); // Hide the welcome message
   };
   return (
     <>
-      <div className="main-photo">
-        <div className="grid-container-todaysWeather">
-        {/* search bar section */}
-          <form className="search-bar grid-col-span-4" onSubmit={handleSubmit}>
-            <div className="flex-search">
-              <div className="search-logo"></div>
-              <input id="searchBarInput" type="text" value={city} placeholder="Location" onChange={handleInputChange} className="search-text"></input>
-              </div>
-          </form>
+
+
+   
+    {/* <h2 className="welcome">Welcome to TrailCast ! </h2> */}
+    {showWelcome && (
+      <div className="main-photo-homescreen">
+        <h1 className="welcome">Welcome to TrailCast!</h1>
+        <form className="search-bar" onSubmit={handleSubmit}>
+          <div className="flex-search">
+            <div className="search-logo"></div>
+            <input id="searchBarInput" type="text" value={city} placeholder="Location" onChange={handleInputChange} className="search-text"></input>
+            </div>
+        </form>
+      </div>
+
+      )}
+      
+    
+
         
+      
         {submitted ? (
           <>
+          <div className="main-photo">
+            <div className="grid-container-todaysWeather">
+            {/* search bar section */}
+            
+              <form className="search-bar grid-col-span-4" onSubmit={handleSubmit}>
+                <div className="flex-search">
+                  <div className="search-logo"></div>
+                  <input id="searchBarInput" type="text" value={city} placeholder="Location" onChange={handleInputChange} className="search-text"></input>
+                  </div>
+              </form>
+          
               <div>
                 <div className="flex-sunrise">
                   <div className="sunrise-logo">
@@ -80,47 +104,21 @@ const Weather = () => {
               <div></div>
               <div id="CurrentLocation" className="location grid-col-span-2">{weatherData.name}</div>
               <div></div>
+              </div>
+        
+        </div>
             </>
           ) : (
             <>
-            <div>
-                <div className="flex-sunrise">
-                  <div className="sunrise-logo">
-                    <img src={sunrise} />
-                  </div>
-                  <div className="sunrise-time"></div>
-                </div>
-                <div className="flex-sunset">
-                  <div className="sunset-logo">
-                    <img src={sunset} />
-                  </div>
-                  <div className="sunset-time"></div>
-                </div>
-              </div>
-              
-              <img />
-              
-              <div className="temperature">°</div>
-              <div>
-                <div className="high-low">H:°L:°</div>
-                <div className="flex-precipitation">
-                </div>
-                <div className="flex-wind">
-                  <div className="windspeed-icon">
-                    <img src={wind} />
-                  </div>
-                  <div className="wind-speed">m/s</div>
-                </div>
-              </div>
-              <div></div>
-              <div id="CurrentLocation" className="location grid-col-span-2"></div>
-              <div></div>
+            {/* initial home screen */}
+            
+            
+  
             </>
         )} 
-        </div>
-      </div>
-
       <MultiDayOutlook city={city} />
+      <Caution weatherData={weatherData} city={city}/>
+      <Map city={city}/>
 
     </>
     

@@ -23,10 +23,12 @@ function Map({ city }) {
     }, [city]); // Execute useEffect whenever the city changes
   return (
     <>
-    <div className="map-position">
+    
         {weatherData ? (
             <>
+            <div className="map-position">
                 <iframe className="map_images" id="map_image_5" src={"https://maps.google.com/maps?q=" + weatherData.coord.lat + "," + weatherData.coord.lon + "&hl=gb&z=14&amp&output=embed"}></iframe>
+            </div>
             </>
             ) : (
             <>
@@ -34,7 +36,7 @@ function Map({ city }) {
             </>
                 )}
 
-            </div>
+            
         </>
 
             );

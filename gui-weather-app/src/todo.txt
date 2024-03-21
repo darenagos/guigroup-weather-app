@@ -1,8 +1,0 @@
-TO DOs:
-- drop down list for locations
-- icons for different conditions
-- changing from degrees to farhenheit
-- assigning api values to respective postitions in the App
-- cutting down the weather table column to a size of 6 (?)
-- caution and tips section
-
