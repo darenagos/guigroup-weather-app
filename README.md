@@ -67,18 +67,6 @@ Below are screenshots demonstrating the mobile web app:
 <img src="/gui-weather-app/images/Screenshot%202025-08-24%20154634.png" alt="Weather Results" width="250"/>
 <img src="/gui-weather-app/images/Screenshot%202025-08-24%20154757.png" alt="Hiking Tips" width="250"/>
 
-### Home Page
-
-![Home Page](screenshots/home.png)
-
-### Weather Results
-
-![Weather Results](screenshots/weather.png)
-
-### Hiking Tips
-
-![Hiking Tips](screenshots/tips.png)
-
 ---
 
 ## License
