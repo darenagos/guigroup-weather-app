@@ -1,80 +1,97 @@
-# guigroup-weather-app
-# GUI Group 16 - Assignment 2: Trailcast
+# Trailcast
 
-1. Make sure you have cloned the repository and opened it in Visual Studio Code.
-2. When running npm, the terminal should be opened in the src folder. Do this by right clicking on the src folder and clicking 'Open in Integrated Terminal'.
-3. Ensure Node.js is installed using 'node -v'. If not, download it from here: https://nodejs.org//
-4. Ensure npm is installed. if not, do 'npm install'.
-5. Make sure npm axios is installed. If not, do 'npm install axios'.
-6. After installation of axios, do 'npm start' to run App.js, which will open a local host server containing the interface.
+Trailcast is a university project, in which the brief was to create a mobile weather app with a focus on GUI. This web application is React-based and provides real-time weather information and hiking safety tips for outdoor enthusiasts. Users can search for weather conditions in different locations, view multi-day forecasts, and receive tailored hiking advice based on current weather.
 
-# Getting Started with Create React App
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Weather Search:** Search for any city to get current weather details (temperature, wind, sunrise/sunset, etc.).
+- **Multi-Day Forecast:** View upcoming weather for several days.
+- **Hiking Tips & Cautions:** Get safety tips and cautions based on weather conditions.
+- **Map Integration:** Visualize the searched location on a map.
+- **Responsive UI:** Works well on desktop and mobile devices.
 
-## Available Scripts
+## Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Runnning the Application](#running-the-application)
+- [Screenshots](#screenshots)
+- [License](#license)
+
+## Tech Stack
+
+- **Frontend:** React
+- **Styling:** CSS
+- **APIs:** OpenWeatherMap API
+- **Testing:** React Testing Library
+- **Other:** Node.js, npm
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- npm (comes with Node.js)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/<your-username>/guigroup-weather-app.git
+   cd guigroup-weather-app
+   ```
+
+2. **Install dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+3. **Install Axios (if not already installed):**
+
+   ```sh
+   npm install axios
+   ```
+
+4. **Start the development server:**
+   ```sh
+   npm start
+   ```
+   The app will open at [http://localhost:3000](http://localhost:3000).
+
+## Running the Application
 
 In the project directory, you can run:
 
-### `npm start`
+- **`npm start`**  
+  Runs the app in development mode.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Below are screenshots demonstrating the mobile web app:
 
-### `npm test`
+![Homepage](/gui-weather-app/images/Screenshot%202025-08-24%20154512.png)
+![Weather Results](/gui-weather-app/images/Screenshot%202025-08-24%20154634.png)
+![Hiking Tips](/gui-weather-app/images/Screenshot%202025-08-24%20154757.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home Page
 
-### `npm run build`
+![Home Page](screenshots/home.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Weather Results
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Weather Results](screenshots/weather.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Hiking Tips
 
-### `npm run eject`
+![Hiking Tips](screenshots/tips.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is for educational purposes as part of a university assignment.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+\*\*Developed by GUI Group 16
